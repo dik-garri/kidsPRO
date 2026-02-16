@@ -103,14 +103,14 @@
           "icon": "🗣",
           "color": "#E1BEE7",
           "topics": [
-            { "id": "s01", "title": "Описание предмета", "taskFile": null, "taskCount": 0 },
-            { "id": "s02", "title": "Рассказ по картинке", "taskFile": null, "taskCount": 0 },
-            { "id": "s03", "title": "Сказки", "taskFile": null, "taskCount": 0 },
-            { "id": "s04", "title": "Синонимы и антонимы", "taskFile": null, "taskCount": 0 },
-            { "id": "s05", "title": "Звуки в начале слова", "taskFile": null, "taskCount": 0 },
-            { "id": "s06", "title": "Деление слов на слоги", "taskFile": null, "taskCount": 0 },
-            { "id": "s07", "title": "Профессии", "taskFile": null, "taskCount": 0 },
-            { "id": "s08", "title": "Мой город", "taskFile": null, "taskCount": 0 }
+            { "id": "s01", "title": "Описание предмета", "taskFile": "age4/speech/s01.json", "taskCount": 12 },
+            { "id": "s02", "title": "Рассказ по картинке", "taskFile": "age4/speech/s02.json", "taskCount": 12 },
+            { "id": "s03", "title": "Сказки", "taskFile": "age4/speech/s03.json", "taskCount": 12 },
+            { "id": "s04", "title": "Синонимы и антонимы", "taskFile": "age4/speech/s04.json", "taskCount": 12 },
+            { "id": "s05", "title": "Звуки в начале слова", "taskFile": "age4/speech/s05.json", "taskCount": 12 },
+            { "id": "s06", "title": "Деление слов на слоги", "taskFile": "age4/speech/s06.json", "taskCount": 12 },
+            { "id": "s07", "title": "Профессии", "taskFile": "age4/speech/s07.json", "taskCount": 12 },
+            { "id": "s08", "title": "Мой город", "taskFile": "age4/speech/s08.json", "taskCount": 12 }
           ]
         },
         {
@@ -119,15 +119,15 @@
           "icon": "🔢",
           "color": "#FFB74D",
           "topics": [
-            { "id": "m01", "title": "Счёт до 10", "taskFile": null, "taskCount": 0 },
-            { "id": "m02", "title": "Цифры 1–10", "taskFile": null, "taskCount": 0 },
-            { "id": "m03", "title": "Больше, меньше, равно", "taskFile": null, "taskCount": 0 },
-            { "id": "m04", "title": "Сравнение групп", "taskFile": null, "taskCount": 0 },
-            { "id": "m05", "title": "Геометрические фигуры", "taskFile": null, "taskCount": 0 },
-            { "id": "m06", "title": "Право и лево", "taskFile": null, "taskCount": 0 },
-            { "id": "m07", "title": "Ориентация на листе", "taskFile": null, "taskCount": 0 },
-            { "id": "m08", "title": "Простые задачи", "taskFile": null, "taskCount": 0 },
-            { "id": "m09", "title": "Порядковый счёт", "taskFile": null, "taskCount": 0 }
+            { "id": "m01", "title": "Счёт до 10", "taskFile": "age4/math/m01.json", "taskCount": 12 },
+            { "id": "m02", "title": "Цифры 1–10", "taskFile": "age4/math/m02.json", "taskCount": 12 },
+            { "id": "m03", "title": "Больше, меньше, равно", "taskFile": "age4/math/m03.json", "taskCount": 12 },
+            { "id": "m04", "title": "Сравнение групп", "taskFile": "age4/math/m04.json", "taskCount": 12 },
+            { "id": "m05", "title": "Геометрические фигуры", "taskFile": "age4/math/m05.json", "taskCount": 12 },
+            { "id": "m06", "title": "Право и лево", "taskFile": "age4/math/m06.json", "taskCount": 12 },
+            { "id": "m07", "title": "Ориентация на листе", "taskFile": "age4/math/m07.json", "taskCount": 12 },
+            { "id": "m08", "title": "Простые задачи", "taskFile": "age4/math/m08.json", "taskCount": 12 },
+            { "id": "m09", "title": "Порядковый счёт", "taskFile": "age4/math/m09.json", "taskCount": 12 }
           ]
         },
         {
@@ -136,11 +136,11 @@
           "icon": "📖",
           "color": "#81C784",
           "topics": [
-            { "id": "r01", "title": "Буквы", "taskFile": null, "taskCount": 0 },
-            { "id": "r02", "title": "Гласные и согласные", "taskFile": null, "taskCount": 0 },
-            { "id": "r03", "title": "Первый звук в слове", "taskFile": null, "taskCount": 0 },
-            { "id": "r04", "title": "Простые слоги", "taskFile": null, "taskCount": 0 },
-            { "id": "r05", "title": "Чтение открытых слогов", "taskFile": null, "taskCount": 0 }
+            { "id": "r01", "title": "Буквы", "taskFile": "age4/reading/r01.json", "taskCount": 12 },
+            { "id": "r02", "title": "Гласные и согласные", "taskFile": "age4/reading/r02.json", "taskCount": 12 },
+            { "id": "r03", "title": "Первый звук в слове", "taskFile": "age4/reading/r03.json", "taskCount": 12 },
+            { "id": "r04", "title": "Простые слоги", "taskFile": "age4/reading/r04.json", "taskCount": 12 },
+            { "id": "r05", "title": "Чтение открытых слогов", "taskFile": "age4/reading/r05.json", "taskCount": 12 }
           ]
         },
         {
@@ -149,12 +149,12 @@
           "icon": "✏",
           "color": "#90CAF9",
           "topics": [
-            { "id": "w01", "title": "Обводка букв", "taskFile": null, "taskCount": 0 },
-            { "id": "w02", "title": "Печатные элементы букв", "taskFile": null, "taskCount": 0 },
-            { "id": "w03", "title": "Узоры", "taskFile": null, "taskCount": 0 },
-            { "id": "w04", "title": "Штриховка", "taskFile": null, "taskCount": 0 },
-            { "id": "w05", "title": "Лабиринты", "taskFile": null, "taskCount": 0 },
-            { "id": "w06", "title": "Мелкая моторика", "taskFile": null, "taskCount": 0 }
+            { "id": "w01", "title": "Обводка букв", "taskFile": "age4/writing/w01.json", "taskCount": 12 },
+            { "id": "w02", "title": "Печатные элементы букв", "taskFile": "age4/writing/w02.json", "taskCount": 12 },
+            { "id": "w03", "title": "Узоры", "taskFile": "age4/writing/w03.json", "taskCount": 12 },
+            { "id": "w04", "title": "Штриховка", "taskFile": "age4/writing/w04.json", "taskCount": 12 },
+            { "id": "w05", "title": "Лабиринты", "taskFile": "age4/writing/w05.json", "taskCount": 12 },
+            { "id": "w06", "title": "Мелкая моторика", "taskFile": "age4/writing/w06.json", "taskCount": 12 }
           ]
         },
         {
@@ -163,14 +163,14 @@
           "icon": "🌍",
           "color": "#A5D6A7",
           "topics": [
-            { "id": "o01", "title": "Времена года подробно", "taskFile": null, "taskCount": 0 },
-            { "id": "o02", "title": "Дни недели", "taskFile": null, "taskCount": 0 },
-            { "id": "o03", "title": "Части суток", "taskFile": null, "taskCount": 0 },
-            { "id": "o04", "title": "Профессии", "taskFile": null, "taskCount": 0 },
-            { "id": "o05", "title": "Транспорт", "taskFile": null, "taskCount": 0 },
-            { "id": "o06", "title": "Страны и города", "taskFile": null, "taskCount": 0 },
-            { "id": "o07", "title": "Животные разных стран", "taskFile": null, "taskCount": 0 },
-            { "id": "o08", "title": "Правила безопасности", "taskFile": null, "taskCount": 0 }
+            { "id": "o01", "title": "Времена года подробно", "taskFile": "age4/world/o01.json", "taskCount": 12 },
+            { "id": "o02", "title": "Дни недели", "taskFile": "age4/world/o02.json", "taskCount": 12 },
+            { "id": "o03", "title": "Части суток", "taskFile": "age4/world/o03.json", "taskCount": 12 },
+            { "id": "o04", "title": "Профессии", "taskFile": "age4/world/o04.json", "taskCount": 12 },
+            { "id": "o05", "title": "Транспорт", "taskFile": "age4/world/o05.json", "taskCount": 12 },
+            { "id": "o06", "title": "Страны и города", "taskFile": "age4/world/o06.json", "taskCount": 12 },
+            { "id": "o07", "title": "Животные разных стран", "taskFile": "age4/world/o07.json", "taskCount": 12 },
+            { "id": "o08", "title": "Правила безопасности", "taskFile": "age4/world/o08.json", "taskCount": 12 }
           ]
         },
         {
@@ -179,11 +179,11 @@
           "icon": "🧠",
           "color": "#CE93D8",
           "topics": [
-            { "id": "l01", "title": "Последовательности", "taskFile": null, "taskCount": 0 },
-            { "id": "l02", "title": "Найди закономерность", "taskFile": null, "taskCount": 0 },
-            { "id": "l03", "title": "Простые ребусы", "taskFile": null, "taskCount": 0 },
-            { "id": "l04", "title": "Классификация по 2 признакам", "taskFile": null, "taskCount": 0 },
-            { "id": "l05", "title": "Пазлы средней сложности", "taskFile": null, "taskCount": 0 }
+            { "id": "l01", "title": "Последовательности", "taskFile": "age4/logic/l01.json", "taskCount": 12 },
+            { "id": "l02", "title": "Найди закономерность", "taskFile": "age4/logic/l02.json", "taskCount": 12 },
+            { "id": "l03", "title": "Простые ребусы", "taskFile": "age4/logic/l03.json", "taskCount": 12 },
+            { "id": "l04", "title": "Классификация по 2 признакам", "taskFile": "age4/logic/l04.json", "taskCount": 12 },
+            { "id": "l05", "title": "Пазлы средней сложности", "taskFile": "age4/logic/l05.json", "taskCount": 12 }
           ]
         }
       ]
