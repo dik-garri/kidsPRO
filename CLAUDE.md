@@ -1,0 +1,83 @@
+# CLAUDE.md
+
+## Project Overview
+
+Sovyonok PRO (Совёнок PRO) — a comprehensive preschool education platform (3-7 years) for school readiness. Vanilla HTML/CSS/JS, no frameworks, no build tools. Hosted on GitHub Pages.
+
+## Tech Stack
+
+- Vanilla JS with ES modules (`import`/`export`)
+- CSS custom properties for theming
+- Hash-based SPA router (`#/path`)
+- localStorage for state persistence under key `owl-kids-v2-progress`
+- Pre-recorded WAV speech files for task questions (Edge TTS, Svetlana voice)
+- Web Speech API as TTS fallback (Russian)
+- WAV sound effects with HTML5 Audio pool for mobile compatibility
+- No dependencies, no build step
+
+## Key Architecture
+
+- `js/engine.js` — game engine loads JSON task configs and delegates to type-specific renderers
+- `js/games/*.js` — each file renders one game type (choice, sequence, dragdrop, match)
+- `js/curriculum.js` — loads and caches `data/curriculum.json` (master config for all topics)
+- `data/tasks/{ageGroup}/{subject}/{topicCode}.json` — task content as JSON
+- `js/state.js` — all app state in localStorage, path-based topic keys (`"age3/math/m01"`)
+- `js/router.js` — hash-based router, routes registered in `app.js`
+- `js/screens/*.js` — screen renderers (home, subjects, topics, play)
+
+## Routes
+
+- `#/` — home (3 age group cards)
+- `#/subjects/:ageGroup` — subject grid for selected age
+- `#/topics/:ageGroup/:subject` — topic list within subject
+- `#/play/:ageGroup/:subject/:topic` — game screen
+
+## Content Structure
+
+### curriculum.json
+Master config with all 123 topics across 3 age groups (age3, age4, age5) and 5-6 subjects each. Each topic points to a `taskFile` path or `null` if not yet created.
+
+### Task files
+Located in `data/tasks/{ageGroup}/{subject}/{topicCode}.json`. Each task has:
+- `id` — unique within topic (e.g. `m01_01`)
+- `type` — one of: `choice`, `sequence`, `drag-drop`, `match` (+ 4 planned: `classify`, `count`, `trace`, `maze`)
+- `question` — Russian text (read aloud via WAV)
+- `image` — optional emoji visual
+- Type-specific fields: `options`/`answer`, `items`, `pairs`, etc.
+
+### Speech files
+WAV files at `assets/speech/{ageGroup}/{subject}/{topicCode}/{taskId}.wav`
+- Engine constructs path: `assets/speech/${taskFile.replace('.json', '')}/${task.id}.wav`
+
+## Game Renderer Interface
+
+```js
+renderX(el, task, speechPath, onAnswer)
+```
+- `el` — container DOM element
+- `task` — task object from JSON
+- `speechPath` — full WAV path for this task
+- `onAnswer(correct: boolean)` — callback when answer is given
+
+## Running Locally
+
+```bash
+python3 -m http.server 8000
+# Open http://localhost:8000
+```
+
+## Important Rules
+
+- **When adding or changing tasks**: ALWAYS generate WAV speech files for new/changed questions
+  - Voice: `ru-RU-SvetlanaNeural`, rate: `-10%`
+  - Convert to WAV: 22050 Hz, mono, 16-bit
+  - Save to: `assets/speech/{ageGroup}/{subject}/{topicCode}/{taskId}.wav`
+  - Tool: `/tmp/tts-env/bin/edge-tts` (install: `python3 -m venv /tmp/tts-env && /tmp/tts-env/bin/pip install edge-tts`)
+  - Convert: `afconvert input.mp3 output.wav -d LEI16 -f WAVE --quality 127 -r 22050`
+- **All task options/items must be emoji-only** — children can't read text
+- **Questions are in Russian** — read aloud via TTS
+
+## Language
+
+- UI and content are in Russian
+- Code comments and git messages in English
