@@ -14,15 +14,15 @@
           "color": "#E1BEE7",
           "topics": [
             { "id": "s01", "title": "Я и моя семья", "taskFile": "age3/speech/s01.json", "taskCount": 13 },
-            { "id": "s02", "title": "Моё имя и возраст", "taskFile": null, "taskCount": 0 },
-            { "id": "s03", "title": "Игрушки", "taskFile": null, "taskCount": 0 },
-            { "id": "s04", "title": "Домашние животные", "taskFile": null, "taskCount": 0 },
-            { "id": "s05", "title": "Овощи и фрукты", "taskFile": null, "taskCount": 0 },
-            { "id": "s06", "title": "Одежда", "taskFile": null, "taskCount": 0 },
-            { "id": "s07", "title": "Части тела", "taskFile": null, "taskCount": 0 },
-            { "id": "s08", "title": "Посуда", "taskFile": null, "taskCount": 0 },
-            { "id": "s09", "title": "Транспорт", "taskFile": null, "taskCount": 0 },
-            { "id": "s10", "title": "Времена года", "taskFile": null, "taskCount": 0 }
+            { "id": "s02", "title": "Моё имя и возраст", "taskFile": "age3/speech/s02.json", "taskCount": 12 },
+            { "id": "s03", "title": "Игрушки", "taskFile": "age3/speech/s03.json", "taskCount": 12 },
+            { "id": "s04", "title": "Домашние животные", "taskFile": "age3/speech/s04.json", "taskCount": 12 },
+            { "id": "s05", "title": "Овощи и фрукты", "taskFile": "age3/speech/s05.json", "taskCount": 12 },
+            { "id": "s06", "title": "Одежда", "taskFile": "age3/speech/s06.json", "taskCount": 12 },
+            { "id": "s07", "title": "Части тела", "taskFile": "age3/speech/s07.json", "taskCount": 12 },
+            { "id": "s08", "title": "Посуда", "taskFile": "age3/speech/s08.json", "taskCount": 12 },
+            { "id": "s09", "title": "Транспорт", "taskFile": "age3/speech/s09.json", "taskCount": 12 },
+            { "id": "s10", "title": "Времена года", "taskFile": "age3/speech/s10.json", "taskCount": 12 }
           ]
         },
         {
@@ -32,15 +32,15 @@
           "color": "#FFB74D",
           "topics": [
             { "id": "m01", "title": "Один и много", "taskFile": "age3/math/m01.json", "taskCount": 14 },
-            { "id": "m02", "title": "Счёт до 3", "taskFile": null, "taskCount": 0 },
-            { "id": "m03", "title": "Счёт до 5", "taskFile": null, "taskCount": 0 },
-            { "id": "m04", "title": "Большой и маленький", "taskFile": null, "taskCount": 0 },
-            { "id": "m05", "title": "Длинный и короткий", "taskFile": null, "taskCount": 0 },
-            { "id": "m06", "title": "Круг", "taskFile": null, "taskCount": 0 },
-            { "id": "m07", "title": "Квадрат", "taskFile": null, "taskCount": 0 },
-            { "id": "m08", "title": "Треугольник", "taskFile": null, "taskCount": 0 },
-            { "id": "m09", "title": "Цвета", "taskFile": null, "taskCount": 0 },
-            { "id": "m10", "title": "Сравнение предметов", "taskFile": null, "taskCount": 0 }
+            { "id": "m02", "title": "Счёт до 3", "taskFile": "age3/math/m02.json", "taskCount": 12 },
+            { "id": "m03", "title": "Счёт до 5", "taskFile": "age3/math/m03.json", "taskCount": 12 },
+            { "id": "m04", "title": "Большой и маленький", "taskFile": "age3/math/m04.json", "taskCount": 12 },
+            { "id": "m05", "title": "Длинный и короткий", "taskFile": "age3/math/m05.json", "taskCount": 12 },
+            { "id": "m06", "title": "Круг", "taskFile": "age3/math/m06.json", "taskCount": 12 },
+            { "id": "m07", "title": "Квадрат", "taskFile": "age3/math/m07.json", "taskCount": 12 },
+            { "id": "m08", "title": "Треугольник", "taskFile": "age3/math/m08.json", "taskCount": 12 },
+            { "id": "m09", "title": "Цвета", "taskFile": "age3/math/m09.json", "taskCount": 12 },
+            { "id": "m10", "title": "Сравнение предметов", "taskFile": "age3/math/m10.json", "taskCount": 12 }
           ]
         },
         {
@@ -50,11 +50,11 @@
           "color": "#90CAF9",
           "topics": [
             { "id": "w01", "title": "Прямые линии", "taskFile": "age3/writing/w01.json", "taskCount": 3 },
-            { "id": "w02", "title": "Волнистые линии", "taskFile": null, "taskCount": 0 },
-            { "id": "w03", "title": "Круг", "taskFile": null, "taskCount": 0 },
-            { "id": "w04", "title": "Обводка по точкам", "taskFile": null, "taskCount": 0 },
-            { "id": "w05", "title": "Штриховка", "taskFile": null, "taskCount": 0 },
-            { "id": "w06", "title": "Раскрашивание", "taskFile": null, "taskCount": 0 }
+            { "id": "w02", "title": "Волнистые линии", "taskFile": "age3/writing/w02.json", "taskCount": 12 },
+            { "id": "w03", "title": "Круг", "taskFile": "age3/writing/w03.json", "taskCount": 12 },
+            { "id": "w04", "title": "Обводка по точкам", "taskFile": "age3/writing/w04.json", "taskCount": 12 },
+            { "id": "w05", "title": "Штриховка", "taskFile": "age3/writing/w05.json", "taskCount": 12 },
+            { "id": "w06", "title": "Раскрашивание", "taskFile": "age3/writing/w06.json", "taskCount": 12 }
           ]
         },
         {
@@ -64,15 +64,15 @@
           "color": "#A5D6A7",
           "topics": [
             { "id": "o01", "title": "Моя семья", "taskFile": "age3/world/o01.json", "taskCount": 13 },
-            { "id": "o02", "title": "Детский сад", "taskFile": null, "taskCount": 0 },
-            { "id": "o03", "title": "Осень", "taskFile": null, "taskCount": 0 },
-            { "id": "o04", "title": "Зима", "taskFile": null, "taskCount": 0 },
-            { "id": "o05", "title": "Весна", "taskFile": null, "taskCount": 0 },
-            { "id": "o06", "title": "Лето", "taskFile": null, "taskCount": 0 },
-            { "id": "o07", "title": "Домашние животные", "taskFile": null, "taskCount": 0 },
-            { "id": "o08", "title": "Дикие животные", "taskFile": null, "taskCount": 0 },
-            { "id": "o09", "title": "Птицы", "taskFile": null, "taskCount": 0 },
-            { "id": "o10", "title": "Погода", "taskFile": null, "taskCount": 0 }
+            { "id": "o02", "title": "Детский сад", "taskFile": "age3/world/o02.json", "taskCount": 12 },
+            { "id": "o03", "title": "Осень", "taskFile": "age3/world/o03.json", "taskCount": 12 },
+            { "id": "o04", "title": "Зима", "taskFile": "age3/world/o04.json", "taskCount": 12 },
+            { "id": "o05", "title": "Весна", "taskFile": "age3/world/o05.json", "taskCount": 12 },
+            { "id": "o06", "title": "Лето", "taskFile": "age3/world/o06.json", "taskCount": 12 },
+            { "id": "o07", "title": "Домашние животные", "taskFile": "age3/world/o07.json", "taskCount": 12 },
+            { "id": "o08", "title": "Дикие животные", "taskFile": "age3/world/o08.json", "taskCount": 12 },
+            { "id": "o09", "title": "Птицы", "taskFile": "age3/world/o09.json", "taskCount": 12 },
+            { "id": "o10", "title": "Погода", "taskFile": "age3/world/o10.json", "taskCount": 12 }
           ]
         },
         {
@@ -82,10 +82,10 @@
           "color": "#CE93D8",
           "topics": [
             { "id": "l01", "title": "Найди одинаковое", "taskFile": "age3/logic/l01.json", "taskCount": 14 },
-            { "id": "l02", "title": "Найди лишнее", "taskFile": null, "taskCount": 0 },
-            { "id": "l03", "title": "Сортировка по цвету", "taskFile": null, "taskCount": 0 },
-            { "id": "l04", "title": "Сортировка по размеру", "taskFile": null, "taskCount": 0 },
-            { "id": "l05", "title": "Простые пазлы", "taskFile": null, "taskCount": 0 }
+            { "id": "l02", "title": "Найди лишнее", "taskFile": "age3/logic/l02.json", "taskCount": 12 },
+            { "id": "l03", "title": "Сортировка по цвету", "taskFile": "age3/logic/l03.json", "taskCount": 12 },
+            { "id": "l04", "title": "Сортировка по размеру", "taskFile": "age3/logic/l04.json", "taskCount": 12 },
+            { "id": "l05", "title": "Простые пазлы", "taskFile": "age3/logic/l05.json", "taskCount": 12 }
           ]
         }
       ]
