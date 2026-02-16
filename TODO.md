@@ -8,13 +8,13 @@
 - [x] Add test tasks: m01(+2 count), l01(+2 classify), o01(+1 maze), s01(+1 count), w01(+3 trace)
 - [x] Generate 9 WAV speech files for new tasks
 
-## Phase 3: All Topics for Age 3-4 (37 remaining)
-- [ ] Speech: s02-s10 (9 topics)
-- [ ] Math: m02-m10 (9 topics)
-- [ ] Writing: w02-w06 (5 topics, w01 done)
-- [ ] World: o02-o10 (9 topics)
-- [ ] Logic: l02-l05 (4 topics)
-- [ ] Generate ~444 WAV speech files
+## Phase 3: All Topics for Age 3-4 ✅
+- [x] Speech: s02-s10 (9 topics, 108 tasks)
+- [x] Math: m02-m10 (9 topics, 108 tasks)
+- [x] Writing: w02-w06 (5 topics, 60 tasks)
+- [x] World: o02-o10 (9 topics, 108 tasks)
+- [x] Logic: l02-l05 (4 topics, 48 tasks)
+- [x] Generated 432 WAV speech files (489 total for age3)
 
 ## Phase 4: All Topics for Age 4-5 (41 topics)
 - [ ] Speech: s01-s08 (8 topics)
