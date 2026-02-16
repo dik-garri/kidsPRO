@@ -1,0 +1,48 @@
+import { state } from './state.js';
+import { renderChoice } from './games/choice.js';
+import { renderSequence } from './games/sequence.js';
+import { renderMatch } from './games/match.js';
+import { renderDragDrop } from './games/dragdrop.js';
+
+const renderers = {
+  choice: renderChoice,
+  sequence: renderSequence,
+  match: renderMatch,
+  'drag-drop': renderDragDrop,
+};
+
+let levelCache = {};
+
+export const engine = {
+  async loadLevel(taskFile) {
+    if (!levelCache[taskFile]) {
+      const resp = await fetch(`data/tasks/${taskFile}`);
+      levelCache[taskFile] = await resp.json();
+    }
+    return levelCache[taskFile];
+  },
+
+  async getTask(topicPath, taskFile) {
+    const level = await this.loadLevel(taskFile);
+    const progress = state.getTopicProgress(topicPath);
+    const available = level.tasks.filter(t => !progress.completed.includes(t.id));
+    if (available.length === 0) return null;
+    return available[0];
+  },
+
+  render(el, task, topicPath, speechPath, onComplete) {
+    const renderer = renderers[task.type];
+    if (!renderer) {
+      el.innerHTML = '<p>Неизвестный тип задания</p>';
+      return;
+    }
+    renderer(el, task, speechPath, (correct) => {
+      state.recordAnswer(topicPath, task.id, correct);
+      onComplete(correct);
+    });
+  },
+
+  registerType(type, renderer) {
+    renderers[type] = renderer;
+  }
+};

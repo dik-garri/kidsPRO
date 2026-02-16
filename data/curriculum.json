@@ -1,0 +1,290 @@
+{
+  "ageGroups": [
+    {
+      "id": "age3",
+      "title": "3–4 года",
+      "subtitle": "Младшая группа",
+      "icon": "👶",
+      "color": "#FFE0B2",
+      "subjects": [
+        {
+          "id": "speech",
+          "title": "Речь",
+          "icon": "🗣",
+          "color": "#E1BEE7",
+          "topics": [
+            { "id": "s01", "title": "Я и моя семья", "taskFile": "age3/speech/s01.json", "taskCount": 12 },
+            { "id": "s02", "title": "Моё имя и возраст", "taskFile": null, "taskCount": 0 },
+            { "id": "s03", "title": "Игрушки", "taskFile": null, "taskCount": 0 },
+            { "id": "s04", "title": "Домашние животные", "taskFile": null, "taskCount": 0 },
+            { "id": "s05", "title": "Овощи и фрукты", "taskFile": null, "taskCount": 0 },
+            { "id": "s06", "title": "Одежда", "taskFile": null, "taskCount": 0 },
+            { "id": "s07", "title": "Части тела", "taskFile": null, "taskCount": 0 },
+            { "id": "s08", "title": "Посуда", "taskFile": null, "taskCount": 0 },
+            { "id": "s09", "title": "Транспорт", "taskFile": null, "taskCount": 0 },
+            { "id": "s10", "title": "Времена года", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "math",
+          "title": "Математика",
+          "icon": "🔢",
+          "color": "#FFB74D",
+          "topics": [
+            { "id": "m01", "title": "Один и много", "taskFile": "age3/math/m01.json", "taskCount": 12 },
+            { "id": "m02", "title": "Счёт до 3", "taskFile": null, "taskCount": 0 },
+            { "id": "m03", "title": "Счёт до 5", "taskFile": null, "taskCount": 0 },
+            { "id": "m04", "title": "Большой и маленький", "taskFile": null, "taskCount": 0 },
+            { "id": "m05", "title": "Длинный и короткий", "taskFile": null, "taskCount": 0 },
+            { "id": "m06", "title": "Круг", "taskFile": null, "taskCount": 0 },
+            { "id": "m07", "title": "Квадрат", "taskFile": null, "taskCount": 0 },
+            { "id": "m08", "title": "Треугольник", "taskFile": null, "taskCount": 0 },
+            { "id": "m09", "title": "Цвета", "taskFile": null, "taskCount": 0 },
+            { "id": "m10", "title": "Сравнение предметов", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "writing",
+          "title": "Подготовка к письму",
+          "icon": "✏",
+          "color": "#90CAF9",
+          "topics": [
+            { "id": "w01", "title": "Прямые линии", "taskFile": null, "taskCount": 0 },
+            { "id": "w02", "title": "Волнистые линии", "taskFile": null, "taskCount": 0 },
+            { "id": "w03", "title": "Круг", "taskFile": null, "taskCount": 0 },
+            { "id": "w04", "title": "Обводка по точкам", "taskFile": null, "taskCount": 0 },
+            { "id": "w05", "title": "Штриховка", "taskFile": null, "taskCount": 0 },
+            { "id": "w06", "title": "Раскрашивание", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "world",
+          "title": "Окружающий мир",
+          "icon": "🌍",
+          "color": "#A5D6A7",
+          "topics": [
+            { "id": "o01", "title": "Моя семья", "taskFile": "age3/world/o01.json", "taskCount": 12 },
+            { "id": "o02", "title": "Детский сад", "taskFile": null, "taskCount": 0 },
+            { "id": "o03", "title": "Осень", "taskFile": null, "taskCount": 0 },
+            { "id": "o04", "title": "Зима", "taskFile": null, "taskCount": 0 },
+            { "id": "o05", "title": "Весна", "taskFile": null, "taskCount": 0 },
+            { "id": "o06", "title": "Лето", "taskFile": null, "taskCount": 0 },
+            { "id": "o07", "title": "Домашние животные", "taskFile": null, "taskCount": 0 },
+            { "id": "o08", "title": "Дикие животные", "taskFile": null, "taskCount": 0 },
+            { "id": "o09", "title": "Птицы", "taskFile": null, "taskCount": 0 },
+            { "id": "o10", "title": "Погода", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "logic",
+          "title": "Логика",
+          "icon": "🧠",
+          "color": "#CE93D8",
+          "topics": [
+            { "id": "l01", "title": "Найди одинаковое", "taskFile": "age3/logic/l01.json", "taskCount": 12 },
+            { "id": "l02", "title": "Найди лишнее", "taskFile": null, "taskCount": 0 },
+            { "id": "l03", "title": "Сортировка по цвету", "taskFile": null, "taskCount": 0 },
+            { "id": "l04", "title": "Сортировка по размеру", "taskFile": null, "taskCount": 0 },
+            { "id": "l05", "title": "Простые пазлы", "taskFile": null, "taskCount": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "age4",
+      "title": "4–5 лет",
+      "subtitle": "Средняя группа",
+      "icon": "👦",
+      "color": "#C8E6C9",
+      "subjects": [
+        {
+          "id": "speech",
+          "title": "Речь",
+          "icon": "🗣",
+          "color": "#E1BEE7",
+          "topics": [
+            { "id": "s01", "title": "Описание предмета", "taskFile": null, "taskCount": 0 },
+            { "id": "s02", "title": "Рассказ по картинке", "taskFile": null, "taskCount": 0 },
+            { "id": "s03", "title": "Сказки", "taskFile": null, "taskCount": 0 },
+            { "id": "s04", "title": "Синонимы и антонимы", "taskFile": null, "taskCount": 0 },
+            { "id": "s05", "title": "Звуки в начале слова", "taskFile": null, "taskCount": 0 },
+            { "id": "s06", "title": "Деление слов на слоги", "taskFile": null, "taskCount": 0 },
+            { "id": "s07", "title": "Профессии", "taskFile": null, "taskCount": 0 },
+            { "id": "s08", "title": "Мой город", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "math",
+          "title": "Математика",
+          "icon": "🔢",
+          "color": "#FFB74D",
+          "topics": [
+            { "id": "m01", "title": "Счёт до 10", "taskFile": null, "taskCount": 0 },
+            { "id": "m02", "title": "Цифры 1–10", "taskFile": null, "taskCount": 0 },
+            { "id": "m03", "title": "Больше, меньше, равно", "taskFile": null, "taskCount": 0 },
+            { "id": "m04", "title": "Сравнение групп", "taskFile": null, "taskCount": 0 },
+            { "id": "m05", "title": "Геометрические фигуры", "taskFile": null, "taskCount": 0 },
+            { "id": "m06", "title": "Право и лево", "taskFile": null, "taskCount": 0 },
+            { "id": "m07", "title": "Ориентация на листе", "taskFile": null, "taskCount": 0 },
+            { "id": "m08", "title": "Простые задачи", "taskFile": null, "taskCount": 0 },
+            { "id": "m09", "title": "Порядковый счёт", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "reading",
+          "title": "Подготовка к чтению",
+          "icon": "📖",
+          "color": "#81C784",
+          "topics": [
+            { "id": "r01", "title": "Буквы", "taskFile": null, "taskCount": 0 },
+            { "id": "r02", "title": "Гласные и согласные", "taskFile": null, "taskCount": 0 },
+            { "id": "r03", "title": "Первый звук в слове", "taskFile": null, "taskCount": 0 },
+            { "id": "r04", "title": "Простые слоги", "taskFile": null, "taskCount": 0 },
+            { "id": "r05", "title": "Чтение открытых слогов", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "writing",
+          "title": "Подготовка к письму",
+          "icon": "✏",
+          "color": "#90CAF9",
+          "topics": [
+            { "id": "w01", "title": "Обводка букв", "taskFile": null, "taskCount": 0 },
+            { "id": "w02", "title": "Печатные элементы букв", "taskFile": null, "taskCount": 0 },
+            { "id": "w03", "title": "Узоры", "taskFile": null, "taskCount": 0 },
+            { "id": "w04", "title": "Штриховка", "taskFile": null, "taskCount": 0 },
+            { "id": "w05", "title": "Лабиринты", "taskFile": null, "taskCount": 0 },
+            { "id": "w06", "title": "Мелкая моторика", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "world",
+          "title": "Окружающий мир",
+          "icon": "🌍",
+          "color": "#A5D6A7",
+          "topics": [
+            { "id": "o01", "title": "Времена года подробно", "taskFile": null, "taskCount": 0 },
+            { "id": "o02", "title": "Дни недели", "taskFile": null, "taskCount": 0 },
+            { "id": "o03", "title": "Части суток", "taskFile": null, "taskCount": 0 },
+            { "id": "o04", "title": "Профессии", "taskFile": null, "taskCount": 0 },
+            { "id": "o05", "title": "Транспорт", "taskFile": null, "taskCount": 0 },
+            { "id": "o06", "title": "Страны и города", "taskFile": null, "taskCount": 0 },
+            { "id": "o07", "title": "Животные разных стран", "taskFile": null, "taskCount": 0 },
+            { "id": "o08", "title": "Правила безопасности", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "logic",
+          "title": "Логика",
+          "icon": "🧠",
+          "color": "#CE93D8",
+          "topics": [
+            { "id": "l01", "title": "Последовательности", "taskFile": null, "taskCount": 0 },
+            { "id": "l02", "title": "Найди закономерность", "taskFile": null, "taskCount": 0 },
+            { "id": "l03", "title": "Простые ребусы", "taskFile": null, "taskCount": 0 },
+            { "id": "l04", "title": "Классификация по 2 признакам", "taskFile": null, "taskCount": 0 },
+            { "id": "l05", "title": "Пазлы средней сложности", "taskFile": null, "taskCount": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "age5",
+      "title": "5–7 лет",
+      "subtitle": "Подготовительная группа",
+      "icon": "👧",
+      "color": "#BBDEFB",
+      "subjects": [
+        {
+          "id": "speech",
+          "title": "Речь",
+          "icon": "🗣",
+          "color": "#E1BEE7",
+          "topics": [
+            { "id": "s01", "title": "Пересказ текста", "taskFile": null, "taskCount": 0 },
+            { "id": "s02", "title": "Составление рассказа", "taskFile": null, "taskCount": 0 },
+            { "id": "s03", "title": "Сложные предложения", "taskFile": null, "taskCount": 0 },
+            { "id": "s04", "title": "Работа с текстом", "taskFile": null, "taskCount": 0 },
+            { "id": "s05", "title": "Анализ слова", "taskFile": null, "taskCount": 0 },
+            { "id": "s06", "title": "Подбор рифм", "taskFile": null, "taskCount": 0 },
+            { "id": "s07", "title": "Словарный запас", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "math",
+          "title": "Математика",
+          "icon": "🔢",
+          "color": "#FFB74D",
+          "topics": [
+            { "id": "m01", "title": "Счёт до 20", "taskFile": null, "taskCount": 0 },
+            { "id": "m02", "title": "Обратный счёт", "taskFile": null, "taskCount": 0 },
+            { "id": "m03", "title": "Сложение в пределах 10", "taskFile": null, "taskCount": 0 },
+            { "id": "m04", "title": "Вычитание в пределах 10", "taskFile": null, "taskCount": 0 },
+            { "id": "m05", "title": "Сравнение чисел", "taskFile": null, "taskCount": 0 },
+            { "id": "m06", "title": "Состав числа", "taskFile": null, "taskCount": 0 },
+            { "id": "m07", "title": "Геометрические тела", "taskFile": null, "taskCount": 0 },
+            { "id": "m08", "title": "Логические задачи", "taskFile": null, "taskCount": 0 },
+            { "id": "m09", "title": "Текстовые задачи", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "reading",
+          "title": "Чтение",
+          "icon": "📖",
+          "color": "#81C784",
+          "topics": [
+            { "id": "r01", "title": "Все буквы алфавита", "taskFile": null, "taskCount": 0 },
+            { "id": "r02", "title": "Чтение по слогам", "taskFile": null, "taskCount": 0 },
+            { "id": "r03", "title": "Чтение коротких слов", "taskFile": null, "taskCount": 0 },
+            { "id": "r04", "title": "Чтение предложений", "taskFile": null, "taskCount": 0 },
+            { "id": "r05", "title": "Понимание прочитанного", "taskFile": null, "taskCount": 0 },
+            { "id": "r06", "title": "Работа с коротким текстом", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "writing",
+          "title": "Письмо",
+          "icon": "✏",
+          "color": "#90CAF9",
+          "topics": [
+            { "id": "w01", "title": "Печатные буквы", "taskFile": null, "taskCount": 0 },
+            { "id": "w02", "title": "Написание имени", "taskFile": null, "taskCount": 0 },
+            { "id": "w03", "title": "Копирование слов", "taskFile": null, "taskCount": 0 },
+            { "id": "w04", "title": "Элементы прописных букв", "taskFile": null, "taskCount": 0 },
+            { "id": "w05", "title": "Работа в строке", "taskFile": null, "taskCount": 0 },
+            { "id": "w06", "title": "Диктант по образцу", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "world",
+          "title": "Окружающий мир",
+          "icon": "🌍",
+          "color": "#A5D6A7",
+          "topics": [
+            { "id": "o01", "title": "Планета Земля", "taskFile": null, "taskCount": 0 },
+            { "id": "o02", "title": "Страны и народы", "taskFile": null, "taskCount": 0 },
+            { "id": "o03", "title": "Природные явления", "taskFile": null, "taskCount": 0 },
+            { "id": "o04", "title": "Вода и её свойства", "taskFile": null, "taskCount": 0 },
+            { "id": "o05", "title": "Животные и среда обитания", "taskFile": null, "taskCount": 0 },
+            { "id": "o06", "title": "Профессии", "taskFile": null, "taskCount": 0 },
+            { "id": "o07", "title": "Правила дорожного движения", "taskFile": null, "taskCount": 0 },
+            { "id": "o08", "title": "Школа и правила поведения", "taskFile": null, "taskCount": 0 }
+          ]
+        },
+        {
+          "id": "logic",
+          "title": "Логика",
+          "icon": "🧠",
+          "color": "#CE93D8",
+          "topics": [
+            { "id": "l01", "title": "Сложные закономерности", "taskFile": null, "taskCount": 0 },
+            { "id": "l02", "title": "Математические головоломки", "taskFile": null, "taskCount": 0 },
+            { "id": "l03", "title": "Задачи на сравнение", "taskFile": null, "taskCount": 0 },
+            { "id": "l04", "title": "Шахматные элементы", "taskFile": null, "taskCount": 0 },
+            { "id": "l05", "title": "Стратегическое мышление", "taskFile": null, "taskCount": 0 }
+          ]
+        }
+      ]
+    }
+  ]
+}
