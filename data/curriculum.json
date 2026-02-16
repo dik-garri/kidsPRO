@@ -13,7 +13,7 @@
           "icon": "🗣",
           "color": "#E1BEE7",
           "topics": [
-            { "id": "s01", "title": "Я и моя семья", "taskFile": "age3/speech/s01.json", "taskCount": 12 },
+            { "id": "s01", "title": "Я и моя семья", "taskFile": "age3/speech/s01.json", "taskCount": 13 },
             { "id": "s02", "title": "Моё имя и возраст", "taskFile": null, "taskCount": 0 },
             { "id": "s03", "title": "Игрушки", "taskFile": null, "taskCount": 0 },
             { "id": "s04", "title": "Домашние животные", "taskFile": null, "taskCount": 0 },
@@ -31,7 +31,7 @@
           "icon": "🔢",
           "color": "#FFB74D",
           "topics": [
-            { "id": "m01", "title": "Один и много", "taskFile": "age3/math/m01.json", "taskCount": 12 },
+            { "id": "m01", "title": "Один и много", "taskFile": "age3/math/m01.json", "taskCount": 14 },
             { "id": "m02", "title": "Счёт до 3", "taskFile": null, "taskCount": 0 },
             { "id": "m03", "title": "Счёт до 5", "taskFile": null, "taskCount": 0 },
             { "id": "m04", "title": "Большой и маленький", "taskFile": null, "taskCount": 0 },
@@ -49,7 +49,7 @@
           "icon": "✏",
           "color": "#90CAF9",
           "topics": [
-            { "id": "w01", "title": "Прямые линии", "taskFile": null, "taskCount": 0 },
+            { "id": "w01", "title": "Прямые линии", "taskFile": "age3/writing/w01.json", "taskCount": 3 },
             { "id": "w02", "title": "Волнистые линии", "taskFile": null, "taskCount": 0 },
             { "id": "w03", "title": "Круг", "taskFile": null, "taskCount": 0 },
             { "id": "w04", "title": "Обводка по точкам", "taskFile": null, "taskCount": 0 },
@@ -63,7 +63,7 @@
           "icon": "🌍",
           "color": "#A5D6A7",
           "topics": [
-            { "id": "o01", "title": "Моя семья", "taskFile": "age3/world/o01.json", "taskCount": 12 },
+            { "id": "o01", "title": "Моя семья", "taskFile": "age3/world/o01.json", "taskCount": 13 },
             { "id": "o02", "title": "Детский сад", "taskFile": null, "taskCount": 0 },
             { "id": "o03", "title": "Осень", "taskFile": null, "taskCount": 0 },
             { "id": "o04", "title": "Зима", "taskFile": null, "taskCount": 0 },
@@ -81,7 +81,7 @@
           "icon": "🧠",
           "color": "#CE93D8",
           "topics": [
-            { "id": "l01", "title": "Найди одинаковое", "taskFile": "age3/logic/l01.json", "taskCount": 12 },
+            { "id": "l01", "title": "Найди одинаковое", "taskFile": "age3/logic/l01.json", "taskCount": 14 },
             { "id": "l02", "title": "Найди лишнее", "taskFile": null, "taskCount": 0 },
             { "id": "l03", "title": "Сортировка по цвету", "taskFile": null, "taskCount": 0 },
             { "id": "l04", "title": "Сортировка по размеру", "taskFile": null, "taskCount": 0 },

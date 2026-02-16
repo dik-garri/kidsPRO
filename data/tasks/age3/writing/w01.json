@@ -1,0 +1,34 @@
+{
+  "topic": {
+    "id": "w01",
+    "title": "Прямые линии"
+  },
+  "tasks": [
+    {
+      "id": "w01_01",
+      "type": "trace",
+      "traceType": "line",
+      "question": "Проведи прямую линию слева направо!",
+      "points": [{"x": 0.1, "y": 0.5}, {"x": 0.9, "y": 0.5}],
+      "strokeWidth": 20,
+      "threshold": 0.5
+    },
+    {
+      "id": "w01_02",
+      "type": "trace",
+      "traceType": "line",
+      "question": "Проведи линию сверху вниз!",
+      "points": [{"x": 0.5, "y": 0.1}, {"x": 0.5, "y": 0.9}],
+      "strokeWidth": 20,
+      "threshold": 0.5
+    },
+    {
+      "id": "w01_03",
+      "type": "trace",
+      "traceType": "dots",
+      "question": "Соедини точки по порядку!",
+      "points": [{"x": 0.15, "y": 0.5}, {"x": 0.5, "y": 0.15}, {"x": 0.85, "y": 0.5}],
+      "strokeWidth": 6
+    }
+  ]
+}

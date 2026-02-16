@@ -3,12 +3,20 @@ import { renderChoice } from './games/choice.js';
 import { renderSequence } from './games/sequence.js';
 import { renderMatch } from './games/match.js';
 import { renderDragDrop } from './games/dragdrop.js';
+import { renderCount } from './games/count.js';
+import { renderClassify } from './games/classify.js';
+import { renderMaze } from './games/maze.js';
+import { renderTrace } from './games/trace.js';
 
 const renderers = {
   choice: renderChoice,
   sequence: renderSequence,
   match: renderMatch,
   'drag-drop': renderDragDrop,
+  count: renderCount,
+  classify: renderClassify,
+  maze: renderMaze,
+  trace: renderTrace,
 };
 
 let levelCache = {};

@@ -18,7 +18,7 @@ Sovyonok PRO (Совёнок PRO) — a comprehensive preschool education platfo
 ## Key Architecture
 
 - `js/engine.js` — game engine loads JSON task configs and delegates to type-specific renderers
-- `js/games/*.js` — each file renders one game type (choice, sequence, dragdrop, match)
+- `js/games/*.js` — each file renders one game type (choice, sequence, dragdrop, match, count, classify, maze, trace)
 - `js/curriculum.js` — loads and caches `data/curriculum.json` (master config for all topics)
 - `data/tasks/{ageGroup}/{subject}/{topicCode}.json` — task content as JSON
 - `js/state.js` — all app state in localStorage, path-based topic keys (`"age3/math/m01"`)
@@ -40,10 +40,18 @@ Master config with all 123 topics across 3 age groups (age3, age4, age5) and 5-6
 ### Task files
 Located in `data/tasks/{ageGroup}/{subject}/{topicCode}.json`. Each task has:
 - `id` — unique within topic (e.g. `m01_01`)
-- `type` — one of: `choice`, `sequence`, `drag-drop`, `match` (+ 4 planned: `classify`, `count`, `trace`, `maze`)
+- `type` — one of: `choice`, `sequence`, `drag-drop`, `match`, `count`, `classify`, `maze`, `trace`
 - `question` — Russian text (read aloud via WAV)
 - `image` — optional emoji visual
-- Type-specific fields: `options`/`answer`, `items`, `pairs`, etc.
+- Type-specific fields vary by type:
+  - `choice`: `options`, `answer`
+  - `sequence`: `items` (correct order)
+  - `drag-drop`: `items`, `slots`, `answer`
+  - `match`: `pairs` ([{left, right}])
+  - `count`: `scene`, `target`, `answer`, optional `options` (choice mode if present, tap mode if absent)
+  - `classify`: `categories` ([{name, items}]), `items` (shuffled pool)
+  - `maze`: `rows`, `cols`, `start`, `end`, `walls` ([[row, col, "right"|"bottom"]])
+  - `trace`: `traceType` ("dots"|"line"), `points` ([{x, y}] normalized 0-1), `strokeWidth`, optional `threshold`
 
 ### Speech files
 WAV files at `assets/speech/{ageGroup}/{subject}/{topicCode}/{taskId}.wav`

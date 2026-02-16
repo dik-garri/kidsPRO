@@ -22,10 +22,10 @@ Interactive learning app designed to prepare children for school. Covers key edu
 - **Sequence** — arrange items in order (drag & drop)
 - **Match** — connect pairs with lines (SVG)
 - **Drag & Drop** — place items into slots
-- **Classify** — sort items into categories *(planned)*
-- **Count** — count objects on screen *(planned)*
-- **Trace** — draw on canvas (letters, shapes) *(planned)*
-- **Maze** — navigate through a maze *(planned)*
+- **Count** — count target objects (choice or tap mode)
+- **Classify** — drag items into category baskets
+- **Maze** — navigate a grid maze (tap or swipe)
+- **Trace** — draw on canvas (connect dots or trace lines)
 
 ## Tech
 
@@ -64,7 +64,11 @@ open http://localhost:8000
 │       ├── choice.js
 │       ├── sequence.js
 │       ├── match.js
-│       └── dragdrop.js
+│       ├── dragdrop.js
+│       ├── count.js
+│       ├── classify.js
+│       ├── maze.js
+│       └── trace.js
 ├── data/
 │   ├── curriculum.json      # Master config (123 topics)
 │   └── tasks/               # Task files by age/subject/topic
