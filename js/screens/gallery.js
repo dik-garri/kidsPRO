@@ -62,31 +62,10 @@ export async function galleryScreen(el, params) {
 
   el.querySelector('#btn-back').addEventListener('click', () => router.navigate('/'));
 
-  grid.querySelectorAll('.gallery-item:not(.locked)').forEach(card => {
+  grid.querySelectorAll('.gallery-item').forEach(card => {
     card.addEventListener('click', () => {
       const path = card.dataset.path;
-      const item = items.find(i => i.topicPath === path);
-      if (!item) return;
-      showPuzzleModal(el, item);
+      router.navigate(`/play/${path}`);
     });
   });
-}
-
-function showPuzzleModal(el, item) {
-  const modal = document.createElement('div');
-  modal.className = 'puzzle-modal';
-  modal.innerHTML = `
-    <div class="puzzle-modal-content">
-      <div class="puzzle-modal-svg" id="modal-svg"></div>
-      <p class="puzzle-modal-title">${item.title}</p>
-      <p class="puzzle-modal-progress">${item.completed}/${item.total}</p>
-    </div>
-  `;
-
-  modal.addEventListener('click', () => modal.remove());
-
-  el.appendChild(modal);
-
-  const svgContainer = modal.querySelector('#modal-svg');
-  puzzles.renderPuzzle(svgContainer, item.puzzle.svg, item.completed, item.total, { size: 280 });
 }

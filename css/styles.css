@@ -1439,7 +1439,6 @@ body {
 
 .gallery-item.locked {
   opacity: 0.4;
-  cursor: not-allowed;
 }
 
 .gallery-preview {
@@ -1449,6 +1448,11 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.gallery-preview svg {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .gallery-label {
