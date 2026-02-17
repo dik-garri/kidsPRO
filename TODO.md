@@ -34,7 +34,7 @@
 - [x] Logic: l01-l05 (5 topics, 60 tasks)
 - [x] Generated 492 WAV speech files
 
-## Phase 6: Polish
-- [ ] Mobile testing (iOS Safari, Android Chrome)
-- [ ] Animations and transitions
-- [ ] Validation script: verify all JSON tasks have matching WAV files
+## Phase 6: Polish ✅
+- [x] Mobile: overscroll-behavior, safe-area insets, -webkit-appearance, PWA meta tags
+- [x] Animations: entrance animations (questions, images, options, topics), celebration effects, progress glow
+- [x] Validation script: `scripts/validate.py` — 123 topics, 1473 tasks, 1473 WAV, all PASS

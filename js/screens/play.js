@@ -64,6 +64,14 @@ export async function playScreen(el, params) {
       gameArea.appendChild(feedback);
       speech.speak(correct ? 'Правильно! Молодец!' : 'Попробуй ещё!');
 
+      if (correct) {
+        const fill = el.querySelector('.progress-fill');
+        if (fill) {
+          fill.classList.add('updated');
+          setTimeout(() => fill.classList.remove('updated'), 700);
+        }
+      }
+
       setTimeout(() => loadNext(), 1500);
     });
   }
