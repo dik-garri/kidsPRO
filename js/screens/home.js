@@ -27,6 +27,12 @@ export async function homeScreen(el) {
           `;
         }).join('')}
       </div>
+      <div class="home-actions">
+        ${ageGroups.map(ag => {
+          const stats = state.getAgeGroupStats(ag);
+          return stats.stars > 0 ? `<button class="btn btn-gallery" data-ag="${ag.id}">🧩 Пазлы ${ag.title}</button>` : '';
+        }).join('')}
+      </div>
       <button class="btn btn-reset" id="btn-reset">Начать заново</button>
     </div>
   `;
@@ -46,6 +52,12 @@ export async function homeScreen(el) {
   el.querySelectorAll('.age-card').forEach(card => {
     card.addEventListener('click', () => {
       router.navigate(`/subjects/${card.dataset.id}`);
+    });
+  });
+
+  el.querySelectorAll('.btn-gallery').forEach(btn => {
+    btn.addEventListener('click', () => {
+      router.navigate(`/puzzles/${btn.dataset.ag}`);
     });
   });
 }
