@@ -28,10 +28,7 @@ export async function homeScreen(el) {
         }).join('')}
       </div>
       <div class="home-actions">
-        ${ageGroups.map(ag => {
-          const stats = state.getAgeGroupStats(ag);
-          return stats.stars > 0 ? `<button class="btn btn-gallery" data-ag="${ag.id}">🧩 Пазлы ${ag.title}</button>` : '';
-        }).join('')}
+        ${ageGroups.map(ag => `<button class="btn btn-gallery" data-ag="${ag.id}">🧩 Пазлы ${ag.title}</button>`).join('')}
       </div>
       <button class="btn btn-reset" id="btn-reset">Начать заново</button>
     </div>
