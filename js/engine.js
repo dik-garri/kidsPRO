@@ -7,6 +7,9 @@ import { renderCount } from './games/count.js';
 import { renderClassify } from './games/classify.js';
 import { renderMaze } from './games/maze.js';
 import { renderTrace } from './games/trace.js';
+import { renderMissing } from './games/missing.js';
+import { renderMirror } from './games/mirror.js';
+import { renderTangram } from './games/tangram.js';
 
 const renderers = {
   choice: renderChoice,
@@ -17,6 +20,9 @@ const renderers = {
   classify: renderClassify,
   maze: renderMaze,
   trace: renderTrace,
+  missing: renderMissing,
+  mirror: renderMirror,
+  tangram: renderTangram,
 };
 
 let levelCache = {};

@@ -290,6 +290,24 @@
               "title": "Простые пазлы",
               "taskFile": "age3/logic/l05.json",
               "taskCount": 12
+            },
+            {
+              "id": "l06",
+              "title": "Что пропало?",
+              "taskFile": "age3/logic/l06.json",
+              "taskCount": 12
+            },
+            {
+              "id": "l07",
+              "title": "Зеркало",
+              "taskFile": "age3/logic/l07.json",
+              "taskCount": 12
+            },
+            {
+              "id": "l08",
+              "title": "Собери узор",
+              "taskFile": "age3/logic/l08.json",
+              "taskCount": 12
             }
           ]
         }
@@ -593,6 +611,24 @@
               "title": "Пазлы средней сложности",
               "taskFile": "age4/logic/l05.json",
               "taskCount": 12
+            },
+            {
+              "id": "l06",
+              "title": "Что пропало?",
+              "taskFile": "age4/logic/l06.json",
+              "taskCount": 12
+            },
+            {
+              "id": "l07",
+              "title": "Зеркало",
+              "taskFile": "age4/logic/l07.json",
+              "taskCount": 12
+            },
+            {
+              "id": "l08",
+              "title": "Собери узор",
+              "taskFile": "age4/logic/l08.json",
+              "taskCount": 12
             }
           ]
         }
@@ -895,6 +931,24 @@
               "id": "l05",
               "title": "Стратегическое мышление",
               "taskFile": "age5/logic/l05.json",
+              "taskCount": 12
+            },
+            {
+              "id": "l06",
+              "title": "Что пропало?",
+              "taskFile": "age5/logic/l06.json",
+              "taskCount": 12
+            },
+            {
+              "id": "l07",
+              "title": "Зеркало",
+              "taskFile": "age5/logic/l07.json",
+              "taskCount": 12
+            },
+            {
+              "id": "l08",
+              "title": "Собери узор",
+              "taskFile": "age5/logic/l08.json",
               "taskCount": 12
             }
           ]
