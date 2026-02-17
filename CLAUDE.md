@@ -25,14 +25,17 @@ Sovyonok PRO (Совёнок PRO) — a comprehensive preschool education platfo
 - `data/tasks/{ageGroup}/{subject}/{topicCode}.json` — task content as JSON
 - `js/state.js` — all app state in localStorage, path-based topic keys (`"age3/math/m01"`)
 - `js/router.js` — hash-based router, routes registered in `app.js`
-- `js/screens/*.js` — screen renderers (home, subjects, topics, play)
+- `js/puzzles.js` — SVG puzzle loader and renderer (reveals pieces based on task progress)
+- `js/screens/*.js` — screen renderers (home, subjects, topics, play, gallery)
+- `data/puzzles.json` — 123 SVG puzzles (one per topic, 12 pieces each)
 
 ## Routes
 
-- `#/` — home (3 age group cards)
-- `#/subjects/:ageGroup` — subject grid for selected age
+- `#/` — home (3 age group cards + puzzle gallery buttons)
+- `#/subjects/:ageGroup` — subject grid for selected age + puzzle button
 - `#/topics/:ageGroup/:subject` — topic list within subject
-- `#/play/:ageGroup/:subject/:topic` — game screen
+- `#/play/:ageGroup/:subject/:topic` — game screen (with mini puzzle preview)
+- `#/puzzles/:ageGroup` — puzzle gallery screen
 
 ## Content Structure
 
@@ -58,6 +61,13 @@ Located in `data/tasks/{ageGroup}/{subject}/{topicCode}.json`. Each task has:
 ### Speech files
 WAV files at `assets/speech/{ageGroup}/{subject}/{topicCode}/{taskId}.wav`
 - Engine constructs path: `assets/speech/${taskFile.replace('.json', '')}/${task.id}.wav`
+
+### Puzzle system
+- `data/puzzles.json` — keyed by topic path (e.g. `"age3/math/m01"`)
+- Each puzzle: `{ title, svg }` where SVG has `viewBox="0 0 200 200"` and 12 `<g data-piece="N">` groups
+- `js/puzzles.js` renders SVG with hidden/revealed pieces based on completed task count
+- Hidden pieces: `opacity: 0.08` + `grayscale(1)`. Revealed: full opacity with `puzzle-pop` animation
+- Mini preview (52x52) in play header. Full gallery at `#/puzzles/:ageGroup`
 
 ## Game Renderer Interface
 

@@ -38,3 +38,13 @@
 - [x] Mobile: overscroll-behavior, safe-area insets, -webkit-appearance, PWA meta tags
 - [x] Animations: entrance animations (questions, images, options, topics), celebration effects, progress glow
 - [x] Validation script: `scripts/validate.py` — 123 topics, 1473 tasks, 1473 WAV, all PASS
+- [x] Emoji sizes: bumped across all game types for mobile readability
+
+## Phase 7: Puzzle Motivation System ✅
+- [x] 123 SVG puzzles (one per topic, 12 pieces each) in `data/puzzles.json`
+- [x] `js/puzzles.js` — loader + renderer (hidden/revealed pieces, animation)
+- [x] Mini puzzle preview (52x52) in play header during gameplay
+- [x] Full puzzle shown on topic completion screen
+- [x] `js/screens/gallery.js` — puzzle gallery with grid, modal popup, locked/partial/complete states
+- [x] Gallery accessible from home screen and subjects screen
+- [x] Route: `#/puzzles/:ageGroup`

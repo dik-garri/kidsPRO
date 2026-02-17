@@ -6,7 +6,7 @@ Live: [dik-garri.github.io/kidsPRO](https://dik-garri.github.io/kidsPRO/)
 
 ## About
 
-Interactive learning app designed to prepare children for school. Covers key educational areas across 3 age groups with 123 topics, 1473 tasks, and 8 game types. All content complete — ready for use.
+Interactive learning app designed to prepare children for school. Covers key educational areas across 3 age groups with 123 topics, 1473 tasks, and 8 game types. SVG puzzle motivation system rewards progress. All content complete — ready for use.
 
 ## Age Groups
 
@@ -36,6 +36,10 @@ Interactive learning app designed to prepare children for school. Covers key edu
 | 5-7 (Подготовительная) | 41 | 492 | 492 |
 | **Total** | **123** | **1473** | **1473** |
 
+## Motivation System
+
+Each of the 123 topics has a unique SVG puzzle (12 pieces). As children complete tasks, puzzle pieces are revealed one by one. A puzzle gallery screen lets kids browse and view their collected puzzles. Mini puzzle preview is shown during gameplay in the header.
+
 ## Tech
 
 - Vanilla JS (ES modules), no frameworks, no build tools
@@ -43,6 +47,7 @@ Interactive learning app designed to prepare children for school. Covers key edu
 - Mobile-first, touch-optimized with safe area support
 - Pre-recorded Russian speech (Edge TTS) with Web Speech API fallback
 - Animated UI: entrance animations, celebration effects, progress feedback
+- SVG puzzle system: 123 puzzles with animated piece reveals
 - All content in JSON — adding topics requires no code changes
 - Validation script: `python3 scripts/validate.py`
 
@@ -66,11 +71,13 @@ open http://localhost:8000
 │   ├── curriculum.js        # Curriculum data loader
 │   ├── speech.js            # WAV playback + TTS fallback
 │   ├── sounds.js            # Sound effects (audio pool)
+│   ├── puzzles.js            # SVG puzzle loader & renderer
 │   ├── screens/             # Screen renderers
 │   │   ├── home.js          # Age group selection
 │   │   ├── subjects.js      # Subject grid
 │   │   ├── topics.js        # Topic list
-│   │   └── play.js          # Game screen
+│   │   ├── play.js          # Game screen + puzzle preview
+│   │   └── gallery.js       # Puzzle gallery
 │   └── games/               # Game type renderers
 │       ├── choice.js
 │       ├── sequence.js
@@ -84,6 +91,7 @@ open http://localhost:8000
 │   └── validate.py          # JSON↔WAV consistency checker
 ├── data/
 │   ├── curriculum.json      # Master config (123 topics)
+│   ├── puzzles.json         # SVG puzzle data (123 puzzles)
 │   └── tasks/               # Task files by age/subject/topic
 └── assets/
     ├── sounds/              # Sound effects (WAV)
