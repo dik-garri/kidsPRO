@@ -25,14 +25,14 @@
 - [x] Logic: l01-l05 (5 topics, 60 tasks)
 - [x] Generated 492 WAV speech files
 
-## Phase 5: All Topics for Age 5-7 (41 topics)
-- [ ] Speech: s01-s07 (7 topics)
-- [ ] Math: m01-m09 (9 topics)
-- [ ] Reading: r01-r06 (6 topics)
-- [ ] Writing: w01-w06 (6 topics)
-- [ ] World: o01-o08 (8 topics)
-- [ ] Logic: l01-l05 (5 topics)
-- [ ] Generate ~492 WAV speech files
+## Phase 5: All Topics for Age 5-7 ✅
+- [x] Speech: s01-s07 (7 topics, 84 tasks)
+- [x] Math: m01-m09 (9 topics, 108 tasks)
+- [x] Reading: r01-r06 (6 topics, 72 tasks)
+- [x] Writing: w01-w06 (6 topics, 72 tasks)
+- [x] World: o01-o08 (8 topics, 96 tasks)
+- [x] Logic: l01-l05 (5 topics, 60 tasks)
+- [x] Generated 492 WAV speech files
 
 ## Phase 6: Polish
 - [ ] Mobile testing (iOS Safari, Android Chrome)
