@@ -15,6 +15,19 @@ export function renderTrace(el, task, speechPath, onAnswer) {
 
 function renderDots(el, task, onAnswer) {
   const points = task.points;
+  // Find unique dot positions (skip later duplicates at same coords)
+  const visibleDots = []; // indices of dots to render
+  const seenPos = new Set();
+  const posToDots = new Map(); // "x,y" -> [indices]
+  for (let i = 0; i < points.length; i++) {
+    const key = `${points[i].x},${points[i].y}`;
+    if (!posToDots.has(key)) posToDots.set(key, []);
+    posToDots.get(key).push(i);
+    if (!seenPos.has(key)) {
+      seenPos.add(key);
+      visibleDots.push(i);
+    }
+  }
   let currentDot = 0;
   let answered = false;
 
@@ -51,21 +64,25 @@ function renderDots(el, task, onAnswer) {
     tCtx.stroke();
     tCtx.setLineDash([]);
 
-    // Draw dots
-    points.forEach((p, i) => {
+    // Draw only unique dots; color based on highest-priority state at each position
+    for (const i of visibleDots) {
+      const p = points[i];
+      const key = `${p.x},${p.y}`;
+      const allAtPos = posToDots.get(key);
       const x = p.x * CANVAS_SIZE;
       const y = p.y * CANVAS_SIZE;
       const radius = 18;
 
+      // Determine color: orange if any dot here is current target, green if any completed, else grey
+      let color = '#BDBDBD';
+      for (const idx of allAtPos) {
+        if (idx === currentDot) { color = '#FF9800'; break; }
+        if (idx < currentDot) color = '#4CAF50';
+      }
+
       tCtx.beginPath();
       tCtx.arc(x, y, radius, 0, Math.PI * 2);
-      if (i < currentDot) {
-        tCtx.fillStyle = '#4CAF50';
-      } else if (i === currentDot) {
-        tCtx.fillStyle = '#FF9800';
-      } else {
-        tCtx.fillStyle = '#BDBDBD';
-      }
+      tCtx.fillStyle = color;
       tCtx.fill();
       tCtx.strokeStyle = '#fff';
       tCtx.lineWidth = 2;
@@ -77,7 +94,7 @@ function renderDots(el, task, onAnswer) {
       tCtx.textAlign = 'center';
       tCtx.textBaseline = 'middle';
       tCtx.fillText(String(i + 1), x, y);
-    });
+    }
   }
 
   drawTemplate();
