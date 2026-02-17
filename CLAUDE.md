@@ -13,6 +13,8 @@ Sovyonok PRO (Совёнок PRO) — a comprehensive preschool education platfo
 - Pre-recorded WAV speech files for task questions (Edge TTS, Svetlana voice)
 - Web Speech API as TTS fallback (Russian)
 - WAV sound effects with HTML5 Audio pool for mobile compatibility
+- PWA meta tags (apple-mobile-web-app-capable, theme-color)
+- CSS animations: entrance effects, celebrations, progress feedback
 - No dependencies, no build step
 
 ## Key Architecture
@@ -35,7 +37,7 @@ Sovyonok PRO (Совёнок PRO) — a comprehensive preschool education platfo
 ## Content Structure
 
 ### curriculum.json
-Master config with all 123 topics across 3 age groups (age3, age4, age5) and 5-6 subjects each. Each topic points to a `taskFile` path or `null` if not yet created.
+Master config with all 123 topics across 3 age groups (age3, age4, age5) and 5-6 subjects each. All topics have task files (1473 tasks total).
 
 ### Task files
 Located in `data/tasks/{ageGroup}/{subject}/{topicCode}.json`. Each task has:
@@ -84,6 +86,7 @@ python3 -m http.server 8000
   - Convert: `afconvert input.mp3 output.wav -d LEI16 -f WAVE --quality 127 -r 22050`
 - **All task options/items must be emoji-only** — children can't read text
 - **Questions are in Russian** — read aloud via TTS
+- **After changes**: run `python3 scripts/validate.py` to verify JSON↔WAV consistency
 
 ## Language
 

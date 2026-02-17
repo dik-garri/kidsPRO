@@ -6,7 +6,7 @@ Live: [dik-garri.github.io/kidsPRO](https://dik-garri.github.io/kidsPRO/)
 
 ## About
 
-Interactive learning app designed to prepare children for school. Covers key educational areas across 3 age groups with 123 topics and 8 game types.
+Interactive learning app designed to prepare children for school. Covers key educational areas across 3 age groups with 123 topics, 1473 tasks, and 8 game types. All content complete — ready for use.
 
 ## Age Groups
 
@@ -27,13 +27,24 @@ Interactive learning app designed to prepare children for school. Covers key edu
 - **Maze** — navigate a grid maze (tap or swipe)
 - **Trace** — draw on canvas (connect dots or trace lines)
 
+## Content
+
+| Age Group | Topics | Tasks | WAV Speech Files |
+|-----------|--------|-------|------------------|
+| 3-4 (Младшая) | 41 | 489 | 489 |
+| 4-5 (Средняя) | 41 | 492 | 492 |
+| 5-7 (Подготовительная) | 41 | 492 | 492 |
+| **Total** | **123** | **1473** | **1473** |
+
 ## Tech
 
 - Vanilla JS (ES modules), no frameworks, no build tools
-- Works offline after first load
-- Mobile-first, touch-optimized
+- PWA-ready (mobile web app capable)
+- Mobile-first, touch-optimized with safe area support
 - Pre-recorded Russian speech (Edge TTS) with Web Speech API fallback
+- Animated UI: entrance animations, celebration effects, progress feedback
 - All content in JSON — adding topics requires no code changes
+- Validation script: `python3 scripts/validate.py`
 
 ## Run Locally
 
@@ -69,10 +80,12 @@ open http://localhost:8000
 │       ├── classify.js
 │       ├── maze.js
 │       └── trace.js
+├── scripts/
+│   └── validate.py          # JSON↔WAV consistency checker
 ├── data/
 │   ├── curriculum.json      # Master config (123 topics)
 │   └── tasks/               # Task files by age/subject/topic
 └── assets/
     ├── sounds/              # Sound effects (WAV)
-    └── speech/              # Task speech files (WAV)
+    └── speech/              # Task speech files (1473 WAV)
 ```
