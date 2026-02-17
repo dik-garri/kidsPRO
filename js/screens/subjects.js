@@ -35,6 +35,7 @@ export async function subjectsScreen(el, params) {
           `;
         }).join('')}
       </div>
+      <button class="btn btn-gallery" id="btn-puzzles">🧩 Мои пазлы</button>
     </div>
   `;
 
@@ -44,5 +45,9 @@ export async function subjectsScreen(el, params) {
     card.addEventListener('click', () => {
       router.navigate(`/topics/${ageGroup}/${card.dataset.id}`);
     });
+  });
+
+  el.querySelector('#btn-puzzles').addEventListener('click', () => {
+    router.navigate(`/puzzles/${ageGroup}`);
   });
 }
