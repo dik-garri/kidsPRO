@@ -913,7 +913,8 @@ body {
 /* Drag hover & clone */
 .drop-hover,
 .seq-item.empty.drop-hover,
-.drop-slot.drop-hover {
+.drop-slot.drop-hover,
+.work-cell.drop-hover {
   border-color: var(--color-primary) !important;
   background: var(--color-primary-light) !important;
   transform: scale(1.1);
