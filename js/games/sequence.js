@@ -1,6 +1,12 @@
 import { sounds } from '../sounds.js';
 import { speech } from '../speech.js';
 
+function isSingleEmoji(val) {
+  const s = String(val).trim();
+  if (Intl.Segmenter) return [...new Intl.Segmenter().segment(s)].length === 1;
+  return [...s].length <= 2;
+}
+
 export function renderSequence(el, task, speechPath, onAnswer) {
   speech.speakTask(speechPath, task.question);
 
@@ -16,7 +22,7 @@ export function renderSequence(el, task, speechPath, onAnswer) {
           ${selected.map(s => `<span class="seq-item done">${s}</span>`).join('')}
           ${Array(task.items.length - selected.length).fill('<span class="seq-item empty">?</span>').join('')}
         </div>
-        <div class="game-options">
+        <div class="game-options${shuffled.every(o => isSingleEmoji(o)) ? ' compact' : ''}">
           ${shuffled.map((item, i) => {
             const isUsed = selected.includes(item) && countUsed(item) >= countInShuffledUpTo(item, i);
             return `<button class="btn btn-option drag-source ${isUsed ? 'used' : ''}"

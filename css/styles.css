@@ -736,6 +736,22 @@ body {
 .btn-option:disabled:active { transform: none; }
 .btn-option.correct, .btn-option.wrong { opacity: 1; }
 
+.game-options.compact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+.game-options.compact .btn-option {
+  aspect-ratio: 1;
+  width: 70px;
+  min-height: unset;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* --- Sequence Game --- */
 .sequence-selected {
   display: flex;
@@ -769,6 +785,12 @@ body {
   border-style: dashed;
   color: #BDBDBD;
   transition: border-color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
+  position: relative;
+}
+.seq-item.empty::after {
+  content: '';
+  position: absolute;
+  inset: -12px;
 }
 
 /* --- Match Game --- */
@@ -1538,6 +1560,11 @@ body {
   .btn-option {
     min-height: 80px;
     font-size: 3rem;
+  }
+
+  .game-options.compact .btn-option {
+    width: 80px;
+    min-height: unset;
   }
 
   .age-card {

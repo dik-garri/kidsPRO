@@ -1,6 +1,12 @@
 import { sounds } from '../sounds.js';
 import { speech } from '../speech.js';
 
+function isSingleEmoji(val) {
+  const s = String(val).trim();
+  if (Intl.Segmenter) return [...new Intl.Segmenter().segment(s)].length === 1;
+  return [...s].length <= 2;
+}
+
 export function renderCount(el, task, speechPath, onAnswer) {
   speech.speakTask(speechPath, task.question);
 
@@ -20,7 +26,7 @@ function renderChoiceMode(el, task, onAnswer) {
       <div class="count-scene">${task.scene.map(item =>
         `<span class="count-item">${item}</span>`
       ).join('')}</div>
-      <div class="game-options">
+      <div class="game-options${task.options.every(o => isSingleEmoji(o)) ? ' compact' : ''}">
         ${task.options.map((opt, i) => `
           <button class="btn btn-option" data-index="${i}">${opt}</button>
         `).join('')}

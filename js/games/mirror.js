@@ -15,9 +15,7 @@ export function renderMirror(el, task, speechPath, onAnswer) {
       </div>
       <div class="game-options">
         ${task.options.map((opt, i) => `
-          <button class="btn btn-option mirror-option" data-index="${i}">
-            ${Array.isArray(opt) ? opt.join('') : opt}
-          </button>
+          <button class="btn btn-option mirror-option" data-index="${i}">${Array.isArray(opt) ? opt.join('') : opt}</button>
         `).join('')}
       </div>
     </div>

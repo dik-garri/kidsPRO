@@ -26,54 +26,21 @@ document.addEventListener('touchstart', unlockAudio, { capture: true });
 document.addEventListener('touchend', unlockAudio, { capture: true });
 document.addEventListener('click', unlockAudio, { capture: true });
 
-let russianVoice = null;
-let ttsUnlocked = false;
-
-function findRussianVoice() {
-  const voices = speechSynthesis.getVoices();
-  russianVoice = voices.find(v => v.lang.startsWith('ru')) || null;
-}
-
-if (typeof speechSynthesis !== 'undefined') {
-  speechSynthesis.onvoiceschanged = findRussianVoice;
-  findRussianVoice();
-}
-
-function unlockTts() {
-  if (ttsUnlocked) return;
-  if (typeof speechSynthesis === 'undefined') return;
-  ttsUnlocked = true;
-  const u = new SpeechSynthesisUtterance('');
-  u.volume = 0;
-  speechSynthesis.speak(u);
-}
-
-document.addEventListener('touchstart', unlockTts, { capture: true });
-document.addEventListener('touchend', unlockTts, { capture: true });
-document.addEventListener('click', unlockTts, { capture: true });
-
 let pendingSpeechPath = null;
-let pendingText = null;
 
 export const speech = {
-  /**
-   * Play pre-recorded WAV for a task, with TTS fallback.
-   * @param {string} speechPath - full path like "assets/speech/age3/math/m01_01.wav"
-   * @param {string} fallbackText - question text for TTS fallback
-   */
-  speakTask(speechPath, fallbackText) {
+  speakTask(speechPath) {
     if (state.get().muted) return;
 
     if (!audioUnlocked) {
       pendingSpeechPath = speechPath;
-      pendingText = fallbackText;
       return;
     }
 
-    this._doSpeakTask(speechPath, fallbackText);
+    this._play(speechPath);
   },
 
-  _doSpeakTask(speechPath, fallbackText) {
+  _play(speechPath) {
     this.stop();
 
     if (!speechAudio) {
@@ -84,54 +51,13 @@ export const speech = {
     speechAudio.src = speechPath;
     speechAudio.currentTime = 0;
     speechAudio.volume = 1.0;
-
-    speechAudio.onerror = () => {
-      this._doSpeakTts(fallbackText);
-    };
-
-    speechAudio.play().catch(() => {
-      this._doSpeakTts(fallbackText);
-    });
-  },
-
-  speak(text) {
-    if (state.get().muted) return;
-
-    const clean = text.replace(/[\u{1F000}-\u{1FFFF}]|[\u{2600}-\u{27BF}]|[\u{FE00}-\u{FEFF}]|[\u{1F900}-\u{1F9FF}]|[❓❌✅⬜🔺]/gu, '').trim();
-    if (!clean) return;
-
-    if (!ttsUnlocked) {
-      pendingText = clean;
-      pendingSpeechPath = null;
-      return;
-    }
-
-    this._doSpeakTts(clean);
-  },
-
-  _doSpeakTts(text) {
-    if (typeof speechSynthesis === 'undefined') return;
-    speechSynthesis.cancel();
-
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'ru-RU';
-    utterance.rate = 0.85;
-    utterance.pitch = 1.1;
-    if (russianVoice) utterance.voice = russianVoice;
-
-    setTimeout(() => {
-      speechSynthesis.speak(utterance);
-    }, 100);
+    speechAudio.play().catch(() => {});
   },
 
   speakPending() {
     if (pendingSpeechPath && audioUnlocked) {
-      this._doSpeakTask(pendingSpeechPath, pendingText);
+      this._play(pendingSpeechPath);
       pendingSpeechPath = null;
-      pendingText = null;
-    } else if (pendingText && ttsUnlocked) {
-      this._doSpeakTts(pendingText);
-      pendingText = null;
     }
   },
 
@@ -139,9 +65,6 @@ export const speech = {
     if (speechAudio) {
       speechAudio.pause();
       speechAudio.currentTime = 0;
-    }
-    if (typeof speechSynthesis !== 'undefined') {
-      speechSynthesis.cancel();
     }
   }
 };

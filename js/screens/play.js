@@ -1,7 +1,6 @@
 import { router } from '../router.js';
 import { state } from '../state.js';
 import { engine } from '../engine.js';
-import { speech } from '../speech.js';
 import { curriculum } from '../curriculum.js';
 import { puzzles } from '../puzzles.js';
 
@@ -76,7 +75,6 @@ export async function playScreen(el, params) {
         ? '<div class="owl-big">🦉</div><p>Правильно!</p>'
         : '<div class="owl-big">🦉</div><p>Попробуй ещё!</p>';
       gameArea.appendChild(feedback);
-      speech.speak(correct ? 'Правильно! Молодец!' : 'Попробуй ещё!');
 
       if (correct) {
         const fill = el.querySelector('.progress-fill');
